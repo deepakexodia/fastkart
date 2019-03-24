@@ -7,8 +7,8 @@ const dbPass = process.env.DB_PASS || '';
 const dbCred =
 	dbUser.length > 0 || dbPass.length > 0 ? `${dbUser}:${dbPass}@` : '';
 
-const dbUrl =
-	process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
+const dbUrl = 'mongodb://shashank:g9971441252@ds139341.mlab.com:39341/cart';
+// process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
 module.exports = {
 	// used by Store (server side)
